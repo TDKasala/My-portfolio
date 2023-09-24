@@ -110,3 +110,23 @@ footer {
     color: #fff; /* White text color */
     padding: 20px 0;
 }
+
+
+
+
+
+/* Add this CSS in your styles.css file or in a <style> block in your HTML */
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    display: inline;
+    margin-right: 20px; /* Adjust the spacing between icons */
+}
+
+.contact-list a {
+    color: #333; /* Adjust the icon color */
+    font-size: 24px; /* Adjust the icon size */
+}

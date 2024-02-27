@@ -1,126 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Denis Kasala</title>
-    <!-- Add Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-<body>
-    <header class="bg-dark text-white text-center py-5">
-        <img src="images/denis.png" alt="Denis Kasala" class="img-fluid rounded-circle" width="150">
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Custom styles -->
+    <style>
+      header {
+        text-align: center;
+        padding: 50px 0;
+      }
+      footer {
+        background-color: #7baee0;
+        color: #fff;
+        padding: 40px 0;
+      }
+      footer a {
+        color: #19abd8;
+      }
+      footer a:hover {
+        color: #ccb90f;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-dark text-white">
+      <div class="container">
+        <img
+          src="images/denis.png"
+          alt="Denis Kasala"
+          class="img-fluid rounded-circle"
+          width="150"
+        />
         <h1>DENIS KASALA</h1>
         <p class="lead">Software Engineer | Tech Enthusiast</p>
+      </div>
     </header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+
+    <!-- Navigation Bar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center"
+    >
+      <div class="container">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact</a>
-                </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav mx-auto">
+            <!-- Change ml-auto to mx-auto -->
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
+
+    <!-- About Me Section -->
     <section id="about" class="py-5">
-        <div class="container">
-            <h2><strong>About Me</strong></h2>
-            <p>Greetings! I'm Denis Kasala, a passionate and dedicated software engineer with a keen interest in crafting digital solutions that make a meaningful impact.</p>
-            <p>My journey in the realm of technology began with a fascination for how lines of code could transform into functional software, and this curiosity has evolved into a thriving career.</p>
-            <p>I specialize in Python, MySQL, Django, HTML, CSS, Docker and a little bit of NLP.</p>
-            <p> My expertise in Python enables me to develop versatile and dynamic software, while my proficiency in MySQL ensures that data management is seamless and organized.</p>
-            <p>Through Django, I craft web applications that are not only visually appealing but also robust in functionality.</p>
-            <p>My grasp of HTML and CSS adds the creative flair that enhances user experiences and brings designs to life.</p>
-            <p>What sets me apart is not just my technical proficiency, but also my commitment to producing results that align with client needs. I thrive in collaborative environments, where I can effectively communicate complex technical concepts with both technical and non-technical stakeholders. My ability to understand project requirements and translate them into practical solutions ensures that the end product not only meets but exceeds expectations.</p>
-             Have a look at the content of the course at <a href="https://www.hyperiondev.com/portfolio/97798/">HyperionDev.</a>
-        </div>
+      <div class="container">
+        <h2 class="text-center mb-4"><strong>About Me</strong></h2>
+        <p class="lead">
+          Greetings! I'm Denis Kasala, a passionate and dedicated software
+          engineer with a keen interest in crafting digital solutions that make
+          a meaningful impact.
+        </p>
+        <!-- Your About Me content goes here -->
+        <p>
+          My journey in the realm of technology began with a fascination for how
+          lines of code could transform into functional software, and this
+          curiosity has evolved into a thriving career.
+        </p>
+        <p>
+          I specialize in Python, MySQL, Django, HTML, CSS, Docker, and a little
+          bit of NLP.
+        </p>
+        <p>
+          My expertise in Python enables me to develop versatile and dynamic
+          software, while my proficiency in MySQL ensures that data management
+          is seamless and organized.
+        </p>
+        <p>
+          Through Django, I craft web applications that are not only visually
+          appealing but also robust in functionality.
+        </p>
+        <p>
+          Additionally, I have studied C# .NET with Microsoft, which has
+          expanded my toolkit for software development. C# is a powerful
+          programming language commonly used for building Windows applications,
+          web applications, and more. Its strong typing, object-oriented nature,
+          and extensive libraries make it a versatile choice for a wide range of
+          projects.
+        </p>
+        <p>
+          My grasp of HTML and CSS adds the creative flair that enhances user
+          experiences and brings designs to life.
+        </p>
+        <p>
+          What sets me apart is not just my technical proficiency, but also my
+          commitment to producing results that align with client needs. I thrive
+          in collaborative environments, where I can effectively communicate
+          complex technical concepts with both technical and non-technical
+          stakeholders. My ability to understand project requirements and
+          translate them into practical solutions ensures that the end product
+          not only meets but exceeds expectations.
+        </p>
+        <p>
+          Have a look at the content of the course at
+          <a href="https://www.hyperiondev.com/portfolio/97798/">HyperionDev</a>
+          and
+          <a
+            href="https://learn.microsoft.com/en-za/users/denisk17/transcript/d5lmetrzkww9n69"
+            >Microsoft Learn.</a
+          >
+        </p>
+        <p>
+          Download my CV <a href="https://github.com/TDKasala/Resume" download>here</a>.
+        </p>
+      </div>
     </section>
 
-    <section id="projects" class="py-5">
-        <div class="container">
-            <h2><strong>Projects</strong></h2>
-            <div class="row">
-                <!-- Project cards with improved markup -->
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Fictional musical band website</h3>
-                            <p class="card-text">This is a Django-based web application for a band's website. It includes features for user authentication, displaying concert information, exclusive content, songs, and albums.</p>
-                            <a href="https://github.com/TDKasala/Band-website" class="btn btn-primary" target="_blank">View Project on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Investment and Bond Calculator</h3>
-                            <p class="card-text">This Python program provides users with the ability to calculate interest on an investment, whether simple or compound, as well as the monthly repayment amount for a home loan (bond).</p>
-                            <a href="https://github.com/TDKasala/Finance" class="btn btn-primary">View Project on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Holiday Cost Calculator</h3>
-                            <p class="card-text">This program is designed to help you calculate the total cost of your holiday, including hotel stay, flight ticket, and car rental.</p>
-                            <a href="https://github.com/TDKasala/Holiday-Cost" class="btn btn-primary">View Project on GitHub</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-title">Online Shopping Page</h3>
-                            <p class="card-text">This is a simple online shopping page template created using HTML and CSS, with Bootstrap for styling. It displays a list of products with images, prices, and a "Buy" button. 
-                                Users can also find a contact form in the footer for inquiries or feedback.</p>
-                            <p><a href="https://github.com/TDKasala/BootstrapPage" class="btn btn-primary">View Project on GitHub</a></p>
-                            <a href="https://tdkasala.github.io/BootstrapPage/" class="btn btn-primary">View the page</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add more project cards as needed -->
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-4"><strong>Portfolio</strong></h2>
+        <!-- Project cards -->
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <strong>Fictional musical band website:</strong>
+                </h5>
+                <p class="card-text">
+                  This is a Django-based web application for a band's website.
+                  It includes features for user authentication, displaying
+                  concert information, exclusive content, songs, and albums.
+                </p>
+                <a
+                  href="https://github
+                            .com/TDKasala/Band-website"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >View Project on GitHub</a
+                >
+              </div>
             </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <strong>Investment and Bond Calculator:</strong>
+                </h5>
+                <p class="card-text">
+                  This Python program provides users with the ability to
+                  calculate interest on an investment, whether simple or
+                  compound, as well as the monthly repayment amount for a home
+                  loan (bond).
+                </p>
+                <a
+                  href="https://github.com/TDKasala/Finance"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >View Project on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <strong>Holiday Cost Calculator:</strong>
+                </h5>
+                <p class="card-text">
+                  This program is designed to help you calculate the total cost
+                  of your holiday, including hotel stay, flight ticket, and car
+                  rental.
+                </p>
+                <a
+                  href="https://github.com/TDKasala/Holiday-Cost"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >View Project on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Random Dice Game:</strong></h5>
+                <p class="card-text">
+                  This simple C# console application implements a random dice
+                  game. The game prompts the user to roll a dice and aims to
+                  roll a number greater than a randomly generated target number.
+                  
+                </p>
+                <a
+                  href="https://github.com/TDKasala/Random-Dice-Game"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >View Project on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title"><strong>Petting Zoo Visit:</strong></h5>
+                <p class="card-text">
+                    This C# console application assists in planning school visits to a petting zoo. It randomly assigns groups of animals to each school visiting, ensuring an enjoyable and diverse experience for the students
+                </p>
+                <a
+                  href="https://github.com/TDKasala/Petting-Zoo-Visit"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >View Project on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  <strong>Holiday Cost Calculator:</strong>
+                </h5>
+                <p class="card-text">
+                  This is a simple online shopping page template created using
+                  HTML and CSS, with Bootstrap for styling. It displays a list
+                  of products with images, prices, and a "Buy" button. Users can
+                  also find a contact form in the footer for inquiries or
+                  feedback.
+                </p>
+                <a
+                  href="https://github.com/TDKasala/BootstrapPage"
+                  class="btn btn-primary"
+                  target="_blank"
+                  >View Project on GitHub</a
+                >
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div style="text-align: center;">
+        <p>
+            <h5>"Kindly explore my GitHub page <a href="https://github.com/TDKasala">here</a> to access over 30 additional repositories."</h5>
+        </p>
+    </div>
     </section>
+    <!-- Services Section -->
 
-    <section id="cv" class="py-5">
+      <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2><strong>My CV</strong></h2>
-            <p>If you'd like to learn more about my qualifications and experience, you can download my CV below:</p>
-            <p><a href="https://github.com/TDKasala/MyCV/blob/main/Denis%20Kasala%20-%20Software%20Engineer.pdf" class="btn btn-primary" download>Download CV</a></p>
+          <h2 class="text-center mb-4"><strong>Services</strong></h2>
+      
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <i class="fas fa-code fa-3x mb-3"></i>
+                  <h4 class="card-title"><strong>Python Development</strong></h4>
+                  <p class="card-text">Leveraging expertise in Python, I offer comprehensive development services for building versatile and dynamic software solutions tailored to your specific requirements.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <i class="fas fa-database fa-3x mb-3"></i>
+                  <h4 class="card-title"><strong>Database Management</strong></h4>
+                  <p class="card-text">Proficient in MySQL, I provide efficient and organized data management solutions, ensuring seamless access, storage, and retrieval of your valuable data.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                  <h4 class="card-title"><strong>Web Application Development with Django</strong></h4>
+                  <p class="card-text">Specializing in Django, I develop robust and scalable web applications that combine visually appealing designs with powerful functionality, providing an exceptional user experience.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row mt-4">
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <i class="fab fa-windows fa-3x mb-3"></i>
+                  <h4 class="card-title"><strong>C# .NET Development</strong></h4>
+                  <p class="card-text">With a solid foundation in C# .NET, I deliver high-quality software solutions for Windows applications, web applications, and more, utilizing the language's strong typing, object-oriented features, and extensive libraries.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card">
+                <div class="card-body text-center">
+                  <i class="fab fa-html5 fa-3x mb-3"></i>
+                  <h4 class="card-title"><strong>HTML/CSS Design and Development</strong></h4>
+                  <p class="card-text">Bringing creative flair to projects, I craft visually stunning user interfaces using HTML and CSS, enhancing user experiences and ensuring designs come to life.</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
+      
+    <!-- Footer Section -->
 
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2><strong>Contact Me</strong></h2>
-            <p>Feel free to reach out to me through the following channels:</p>
-            <ul class="contact-list">
-                <li>Email:<a href="mailto:deniskasala17@gmail.com"><i class="fas fa-envelope"></i>deniskasala17@gmail.com</a></li>
-                <li>LinkedIn:<a href="https://www.linkedin.com/in/denis-kasala-353157b0"><i class="fab fa-linkedin"></i>Denis Kasala</a></li>
-                <li>Github:<a href="https://github.com/TDKasala"><i class="fab fa-github"></i>TDKasala</a></li>
-                <li>Twitter:<a href="https://twitter.com/iam_denisK"><i class="fab fa-twitter"></i>Denis Kasala</a></li>
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h3><strong>Contact Me</strong></h3>
+            <p>Feel free to reach out to me:<br>
+                          <a href="mailto:deniskasala17@gmail.com"
+                ><i class="fas fa-envelope"></i> deniskasala17@gmail.com
+              </a>
+            </p>  
+            
+          </div>
+          <div class="col-md-6">
+            <h3><strong>Connect with Me</strong></h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="https://www.linkedin.com/in/denis-kasala-353157b0"
+                  ><i class="fab fa-linkedin"> </i> Denis Kasala</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/TDKasala"
+                  ><i class="fab fa-github"> </i> TDKasala</a
+                >
+              </li>
+              <li>
+                <a href="https://twitter.com/denis_kasala"
+                  ><i class="fab fa-twitter"> </i> Denis Kasala</a
+                >
+              </li>
             </ul>
+          </div>
         </div>
-    </section>
-
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2023 Denis Kasala</p>
+        <hr />
+        <p class="text-center">
+          &copy; 2023 Denis Kasala. All rights reserved.
+        </p>
+      </div>
     </footer>
-    
-    <!-- Update Bootstrap JavaScript and jQuery links to the latest versions -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+
+    <!-- Bootstrap JS and Font Awesome -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>

@@ -1,132 +1,95 @@
+
 /* styles.css */
 
-/* Global Styles */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
+    line-height: 1.6;
 }
 
-/* Navbar Styles */
-.navbar {
-    background-color: #343a40; /* Dark background color */
-}
-
-.navbar-brand {
-    font-size: 24px;
-}
-
-.navbar-nav .nav-link {
-    font-size: 18px;
-    color: #fff; /* White text color */
-    margin: 0 10px;
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
 }
 
 /* Header Styles */
-.header {
-    background-image: url('images/header-background.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 100px 0;
+header {
     text-align: center;
+    padding: 50px 0;
 }
 
-.header h1 {
-    font-size: 36px;
-    margin-top: 20px;
+header h1 {
+    font-size: 2.5rem;
 }
 
-.header p {
-    font-size: 20px;
+header p {
+    font-size: 1.2rem;
 }
 
-/* About Section Styles */
-#about {
-    padding: 80px 0;
+/* Navigation Styles */
+.navbar {
+    background-color: #7ba6d1 !important;
 }
 
-#about h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
+.navbar-brand {
+    color: #fff !important;
+    font-size: 1.5rem;
 }
 
-#about img {
-    border-radius: 50%;
-    max-width: 100%;
+.nav-link {
+    color: #fff !important;
 }
 
-/* Projects Section Styles */
-#projects {
-    background-color: #f8f9fa; /* Light background color */
-    padding: 80px 0;
-}
-
-#projects h2 {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.card {
-    border: none;
-}
-
-.card-title {
-    font-size: 24px;
-    margin-top: 15px;
-}
-
-.card-text {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.card-img-top {
-    max-height: 200px;
-}
-
-/* Contact Section Styles */
-#contact {
-    padding: 80px 0;
-}
-
-#contact h2 {
-    font-size: 32px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-ul li {
-    font-size: 18px;
-    margin-top: 10px;
+.nav-link:hover {
+    color: #e4c519 !important;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #343a40; /* Dark background color */
-    color: #fff; /* White text color */
-    padding: 20px 0;
+    background-color: #6987a5;
+    color: #fff;
+    padding: 40px 0;
 }
 
-
-
-
-
-/* Add this CSS in your styles.css file or in a <style> block in your HTML */
-.contact-list {
-    list-style: none;
-    padding: 0;
+footer a {
+    color: #17a2b8 !important;
 }
 
-.contact-list li {
-    display: inline;
-    margin-right: 20px; /* Adjust the spacing between icons */
+footer a:hover {
+    color: #dfd32c !important;
+    text-decoration: none;
 }
 
-.contact-list a {
-    color: #333; /* Adjust the icon color */
-    font-size: 24px; /* Adjust the icon size */
+/* Portfolio Section Styles */
+#portfolio {
+    background-color: #97c3f0;
+    padding: 60px 0;
+}
+
+/* Service Section Styles */
+#services {
+    background-color: #b2c1cf;
+    padding: 60px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+    background-color: #7bb8e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-item i {
+    color: #007bff;
+}
+
+.service-item h4 {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.service-item p {
+    font-size: 1rem;
 }
